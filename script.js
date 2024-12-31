@@ -12,7 +12,7 @@ var tablinks = document.getElementsByClassName("tab-links");
             document.getElementById(tabname).classList.add("active-tab");
 
         }
-
+            //for side menu on small screens
         var sidemenu = document.getElementById("sidemenu");
 
         function openmenu(){

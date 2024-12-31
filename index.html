@@ -19,9 +19,9 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()" style="display: none;"></i>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()" style="display: none;"></i>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Academacian</p>
@@ -139,7 +139,7 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>nmarawini434@gmail.com</p>
+                    <p><i class="fa-solid fa-envelope"></i><a href="mailto:nmarawini434@gmail.com">nmarawini434@gmail.com</a></p>
                     <p><i class="fa-brands fa-whatsapp"></i>+254 727 825 445</p>
                     <div class="social-icons">
                         <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
@@ -154,9 +154,9 @@
                         <input type="text" name="Name" placeholder="Full Name" required>
                         <input type="email"name="Email" placeholder="Email" required>
                         <textarea name="Message" rows="7" placeholder="Message"></textarea>
-                    </form>
+                        <span id="success"></span>
                         <button type="submit" class="btn btn2">Send</button>
-                    <span id="success"></span>
+                    </form>
                 </div>
             </div>
         </div>
