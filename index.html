@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv=""X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newton Marawini</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/47e2788074.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="header" class="header">
+        <div class="container">
+            <nav>
+                <img src="img/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()" style="display: none;"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()" style="display: none;"></i>
+            </nav>
+            <div class="header-text">
+                <p>Academacian</p>
+                <h1 id="typing-text"></h1>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./img/profile.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a software developer with a passion for creating and developing software solutions. I have a strong background in software development and I am always looking for new challenges and opportunities to grow my skills. I am a quick learner and I am always looking for new ways to improve my skills and knowledge. I am a team player and I work well with others to achieve common goals. I am always looking for new ways to improve my skills and knowledge. I am a team player and I work well with others to achieve common goals.</p>
+                    
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links"  onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Academician</span><br>Writing Academic papers</li>
+                            <li><span>Teacher</span><br>Good and Excellent teaching skills</li>
+                            <li><span>Researcher</span><br>Having majored in Physics and Chemistry I have wrote several papers</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Attachment Teacher</span><br>Kathiani Girls’ High School- May 2024 to August 2024</li>
+                            <li><span>Teacher</span><br>suwerwa boys 1 year</li>
+                            <li><span>Teacher</span><br>Chesubet secondary</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2021-2024</span><br>Machakos University.
+                                Bachelor of Education Science (Physics and Chemistry)</li>
+                            <li><span>Jan 2017-Dec 2020</span><br>St. Francis Boys High School Suwerwa.
+                                Kenya Certificate for Secondary Education (K.C.S.E)</li>
+                            <li><span>2008-2016</span><br>Kapcherop Primary School
+                                Kenya Certificate for Primary Education (K.C.P.E)</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- ----------------------------services----------------------- -->
+    <section class="services" id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-user-graduate"></i>
+                    <h2>Academician</h2>
+                    <p>Writing Academic papers</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-person-chalkboard"></i>
+                    <h2>Teacher</h2>
+                    <p>Writing Academic papers</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-file"></i>
+                    <h2>Researcher</h2>
+                    <p>Writing Academic papers</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- portfolio -->
+     <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/work-1.jpg" alt="Work 1">
+                    <div class="layer">
+                        <h3>Reaserch Paper</h3>
+                        <p>Research paper on the effects of climate change on agriculture in Kenya</p>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work-2.jpg" alt="Work 2">
+                    <div class="layer">
+                        <h3>Research Paper2</h3>
+                        <p>Research paper on the effects of climate change on agriculture in Kenya</p>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>             
+                </div>
+                <div class="work">
+                    <img src="img/work-3.jpg" alt="Work 3">
+                    <div class="layer">
+                        <h3>Research Paper3</h3>
+                        <p>Research paper on the effects of climate change on agriculture in Kenya</p>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">View All</a>
+        </div>
+    </section>
+    <!-- contact -->
+     <section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>nmarawini434@gmail.com</p>
+                    <p><i class="fa-brands fa-whatsapp"></i>+254 727 825 445</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="img\WAFULA MARAWINI CV updated.pdf" class="btn">View CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Full Name" required>
+                        <input type="email"name="Email" placeholder="Email" required>
+                        <textarea name="Message" rows="7" placeholder="Message"></textarea>
+                    </form>
+                        <button type="submit" class="btn btn2">Send</button>
+                    <span id="success"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="copyright">
+        <p>copyright 2024 Newton Marawini. All rights reserved.</p>
+    </div>        
+    <script src="script.js"></script>
+</body>
+</html>
