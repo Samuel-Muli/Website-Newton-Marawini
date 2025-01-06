@@ -260,19 +260,31 @@ body.header nav{
     border-radius: 10px;
     position: absolute;
     left: 0;
-    bottom: 0;
+    top: 0; /* Changed from bottom to top */
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 40px;
+    padding-left: 10px;
     text-align: center;
     font-size: 15px;
-    transition: heightn 0.5s;
+    transition: height 0.5s;
 }
-.layer h3{
-    margin-bottom: 20px;
+.work h3{
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 24px;
+    position: relative;
+    z-index: 1; /* Ensure h3 stays above the layer */
+}
+.work:hover .layer{
+    height: calc(100% - 60px); /* Adjust height to not cover h3 */
+}
+.layer p{
+    font-size: 18px;
+    font-weight: normal;
+    /* margin-top: 100px; */
 }
 .layer a{
     margin-top: 20px;
