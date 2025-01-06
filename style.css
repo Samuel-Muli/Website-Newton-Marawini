@@ -248,8 +248,8 @@ body.header nav{
 .work img{
     width: 100%;
     border-radius: 10px;
-/*     object-fit: cover;
-    transition: 0.5s; */
+    object-fit: cover;
+    transition: 0.5s;
     display: block;
     transition: transform 0.5s;
 }
@@ -272,8 +272,6 @@ body.header nav{
     transition: heightn 0.5s;
 }
 .layer h3{
-    /* color: #fff; */
-    font-weight: 500;
     margin-bottom: 20px;
 }
 .layer a{
