@@ -102,5 +102,38 @@ var tablinks = document.getElementsByClassName("tab-links");
             }
         });
     });
+            //si hii website iwe noma wacha tu add function ya kucopy phone number on click
+            //mkuu i tried my best lakini inacopy phone number tu
+            //it does not show copy on hover or copied on click as i intended
+            //i will keep trying but ...
+document.getElementById('phone-number').addEventListener('click', function() {
+  const phoneNumber = this.textContent;
 
+  // Create a temporary textarea element
+  const textArea = document.createElement('textarea');
+  textArea.value = phoneNumber;
+
+  // Append it to the document
+  document.body.appendChild(textArea);
+
+  // Select and copy the text
+  textArea.select();
+  textArea.setSelectionRange(0, 99999); // For mobile devices
+
+  document.execCommand('copy');
+
+  // Remove the temporary textarea
+  document.body.removeChild(textArea);
+
+  // Optionally change the tooltip text to indicate successful copy
+  const tooltip = document.getElementById('tooltip');
+  tooltip.textContent = 'Copied!';
+  
+  // Reset tooltip text after a short delay
+  setTimeout(function() {
+    tooltip.textContent = 'Copy';
+  }, 1000);
+});
+
+              
                         
