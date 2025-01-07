@@ -270,6 +270,7 @@ body.header nav{
     text-align: center;
     font-size: 15px;
     transition: height 0.5s;
+    z-index: 0; /* Ensure layer stays below h3 */
 }
 .work h3{
     margin-bottom: 60px;
@@ -280,6 +281,15 @@ body.header nav{
 }
 .work:hover .layer{
     height: calc(100% - 60px); /* Adjust height to not cover h3 */
+}
+            /* small screen features */
+@media only screen and (max-width: 720px) {
+    .layer {
+        overflow-y: auto; /* Make layer scrollable */
+    }
+    .work h3 {
+        z-index: 2; /* Ensure h3 stays above the layer on small screens */
+    }
 }
 .layer p{
     font-size: 18px;
@@ -424,7 +434,7 @@ nav .fa-solid{
     display: none;
 }
 
-@media only screen and (max-width: 720px){
+@media only screen and (max-width: 1100px){
     #header{
         background-image: url(img/phonescreen.jpg);
     }
@@ -433,7 +443,7 @@ nav .fa-solid{
         margin-left: -15px;
     }
     .header-text{
-        margin-top: 100%;
+        margin-top: 300px;
         font-size: 16px;
     }
     .header-text h1{
