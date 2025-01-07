@@ -24,7 +24,7 @@ var tablinks = document.getElementsByClassName("tab-links");
             sidemenu.style.right = "-200px";
         }
 
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxVpIwT8idbC4domzlbYSckiAwLl2b_FELjKye9nzN6v3kNdcd0px8rWKhhUMMw2P4B/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxzNQJflk5EJ7oq0syIkGDwiNDLfvWSrzMX9o7xZfqDwtFQgtGL2MyAdJvrHG0WKomv/exec'
         const form = document.forms['submit-to-google-sheet']
         const success =document.getElementById('success')
       
