@@ -1,3 +1,5 @@
+                //code by SaMu Teh
+                    //for tabs in about
 var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
 
